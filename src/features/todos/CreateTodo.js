@@ -12,9 +12,10 @@ function CreateTodo() {
       <form>
         <p>
           <label>add todo</label>
-          <input type="text" onChange={e=>handleChange(e)} />
+          <input type="text" value={text} onChange={e=>handleChange(e)} />
         </p>
         <input type="submit" />
+              <p>Form Text: {text}</p>
       </form>
     </div>
   );
